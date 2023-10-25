@@ -4,11 +4,12 @@
 ![image](image/1.png)
 ![image](image/2.png)
 # 1 如何引入自己的项目
-## 1.1 下载源码 
+## 1.1 方法一
+### 1.1.1 下载源码 
 https://github.com/qiangzhouliang/Swan_record
-## 1.2 在自己的工厂引入 SW_Record_Video module
+### 1.1.2 在自己的工厂引入 SW_Record_Video module
 
-## 1.3 添加依赖项
+### 1.1.3 添加依赖项
 settings.gradle
 ~~~
 include(":SW_Record_Video")
@@ -18,6 +19,25 @@ dependencies {
 	  implementation(project(":SW_Record_Video"))
 }
 ~~~
+## 1.2 方法二
+### 1.2.1 将JitPack存储库添加到您的构建文件中
+将其添加到存储库末尾的root（项目） build.gradle中：
+~~~
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+~~~
+### 1.2.2 添加依赖项
+lastestVersion = [![](https://jitpack.io/v/qiangzhouliang/Swan_record.svg)](https://jitpack.io/#qiangzhouliang/Swan_record)
+~~~
+dependencies {
+	  implementation 'com.github.qiangzhouliang:Swan_record:$lastestVersion'
+}
+~~~
+
 # 2 如何使用
 ## 2.1 xml
 ~~~
