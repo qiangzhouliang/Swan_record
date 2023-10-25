@@ -66,7 +66,7 @@ public class RecordProgressButton extends View {
         this.mInnerColor = typedArray.getColor(R.styleable.record_progress_button_inner_color,  Color.WHITE);
         this.mOuterColor = typedArray.getColor(R.styleable.record_progress_button_outer_color,  Color.parseColor("#dfdfdf"));
         this.mProgressColor = typedArray.getColor(R.styleable.record_progress_button_progress_color,  Color.parseColor("#62c554"));
-        typedArray.close();
+        typedArray.recycle();
     }
 
     private int dip2px(float dip) {
