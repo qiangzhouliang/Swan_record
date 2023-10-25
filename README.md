@@ -40,7 +40,7 @@ dependencies {
 
 # 2 如何使用
 ## 2.1 xml
-~~~
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -76,10 +76,10 @@ dependencies {
         android:text="录制"
         android:visibility="gone" />
 </RelativeLayout>
-~~~
+```
 ## 2.2 在要使用的地方写上如下代码
 - 1 java 代码中
-~~~
+```java
 package com.swan.swan_record;
 
 import android.Manifest;
@@ -174,10 +174,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-~~~
+```
 
 # 3 版本更新说明
-## 3.1 1.0.0 方微信短视频拍摄
+## 1.0.4 方微信短视频拍摄
 
 
 
